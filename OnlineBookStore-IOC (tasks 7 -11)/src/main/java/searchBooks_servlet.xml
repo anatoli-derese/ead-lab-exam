@@ -1,0 +1,9 @@
+<servlet>
+    <servlet-name>searchBooksServlet</servlet-name>
+    <servlet-class>SearchBooksServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>searchBooksServlet</servlet-name>
+    <url-pattern>/searchBooks</url-pattern>
+</servlet-mapping>

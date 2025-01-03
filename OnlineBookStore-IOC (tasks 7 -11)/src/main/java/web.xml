@@ -1,0 +1,22 @@
+<web-app>
+    <!-- Other servlet configurations -->
+
+    <!-- Configure Spring ContextLoaderListener -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/beans.xml</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>searchBooksServlet</servlet-name>
+        <servlet-class>SearchBooksServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>searchBooksServlet</servlet-name>
+        <url-pattern>/searchBooks</url-pattern>
+    </servlet-mapping>
+</web-app>

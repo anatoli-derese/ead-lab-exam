@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Bookstore Application</h1>
+    <p>Use the options below to manage your books:</p>
+
+    <div class="container">
+        <!-- Add a new book -->
+        <a href="addBookForm.html" class="button">Add New Book</a>
+
+        <!-- View all books -->
+        <a href="/displayBooksServlet" class="button">View All Books</a>
+
+        <!-- Delete a book -->
+        <a href="deleteBookForm.html" class="button">Delete Book</a>
+
+        <!-- Search for books -->
+        <a href="searchBookForm.html" class="button">Search for Books</a>
+    </div>
+</body>
+</html>
