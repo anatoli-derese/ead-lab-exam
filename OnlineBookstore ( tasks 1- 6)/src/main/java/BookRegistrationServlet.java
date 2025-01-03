@@ -22,7 +22,7 @@ public class BookRegistrationServlet extends HttpServlet {
 
         String title = request.getParameter("title");
         String author = request.getParameter("author");
-        double price = Double.parseDouble(request.geameter("price"));
+        double price = Double.parseDouble(request.getParameter("price"));
 
         try (Connection connection = dbManager.openConnection()) {
             String sql = "INSERT INTO Books (title,author, price) VALUES (?, ?, ?)";
